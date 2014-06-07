@@ -20,6 +20,6 @@ dates<-as.vector(Dat$Date)
 z<-paste(dates, times)
 tmp<-strptime(z, "%d/%m/%Y %H:%M:%S")
 plot(tmp,as.numeric(as.vector(Dat$Global_active_power)),type="l",
-     ylab="Global Active Power(kilowatts)")
+     ylab="Global Active Power(kilowatts)",xlab="")
 dev.copy(png, file = "./data/plot2.png", width=480, height=480)
 dev.off()

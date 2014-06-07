@@ -20,7 +20,7 @@ dates<-as.vector(Dat$Date)
 z<-paste(dates, times)
 tmp<-strptime(z, "%d/%m/%Y %H:%M:%S")
 plot(tmp,as.vector(Dat$Sub_metering_1),type="l",col="black",
-     ylim=c(0,40),ylab="Energy sub metering")
+     ylim=c(0,40),ylab="Energy sub metering",xlab="")
 lines(tmp,as.vector(Dat$Sub_metering_2),type="l",col="red",
       xlab = "", ylab = "",ylim=c(0,40))
 lines(tmp,as.vector(Dat$Sub_metering_3),type="l",col="blue",
